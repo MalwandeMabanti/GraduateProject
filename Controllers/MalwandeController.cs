@@ -2,7 +2,7 @@
 
 namespace NewProject.Controllers
 {
-    public class MalController : Controller
+    public class MalwandeController : Controller
     {
         public IActionResult Index()
         {
