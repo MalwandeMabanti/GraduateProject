@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NewProject.Models;
 
 namespace NewProject.Controllers
 {
@@ -6,7 +7,8 @@ namespace NewProject.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            ProfileViewModel model = new ProfileViewModel();
+            return View(model);
         }
     }
 }

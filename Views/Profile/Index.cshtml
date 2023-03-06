@@ -1,9 +1,23 @@
-﻿@*
+﻿@model NewProject.Models.ProfileViewModel
+
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
+
+<h1>Profile</h1>
+
 <div>
-    This is where you view a profile
+    <ol>
+        <li>@Model.Name</li>
+        <li>@Model.Surname</li>
+        <li>@Model.DateOfBirth</li>
+        <li>@Model.Age</li>
+        <li>@Model.Country</li>
+        <li>@Model.City</li>
+    </ol>
+    
 </div>
