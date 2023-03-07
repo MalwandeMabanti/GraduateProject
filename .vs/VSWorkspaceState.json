@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Views"
+    "\\Views\\Home",
+    "\\Views\\Malwande",
+    "\\Views\\Profile",
+    "\\Views\\Shared"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\Controllers\\ProfileController.cs",
   "PreviewInSolutionExplorer": false
 }

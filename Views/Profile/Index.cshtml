@@ -1,4 +1,4 @@
-﻿@model NewProject.Models.ProfileViewModel
+﻿@model IEnumerable<NewProject.Models.ProfileViewModel>
 
 
 @*
@@ -10,14 +10,30 @@
 
 <h1>Profile</h1>
 
-<div>
-    <ol>
-        <li>@Model.Name</li>
-        <li>@Model.Surname</li>
-        <li>@Model.DateOfBirth</li>
-        <li>@Model.Age</li>
-        <li>@Model.Country</li>
-        <li>@Model.City</li>
-    </ol>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>DateOfBirth</th>
+        <th>Age</th>
+        <th>Country</th>
+        <th>City</th>
+
+    </tr>
+    @foreach(var profile in Model)
+    {
+        <tr>
+            <td>@profile.FirstName</td>
+            <td>@profile.Surname</td>ll
+            <td>@profile.DateOfBirth.Year - @profile.DateOfBirth.Month - @profile.DateOfBirth.Day</td>
+            <td>@profile.Age</td>
+            <td>@profile.Country</td>
+            <td>@profile.City</td>
+        </tr>
+    }
+</table>
     
-</div>
+
+
+
