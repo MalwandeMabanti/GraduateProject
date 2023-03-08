@@ -1,0 +1,64 @@
+﻿@model NewProject.Models.ProfileViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+
+
+
+<div>
+    <form method="post" asp-action="Adding" asp-controller="Profile">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+                
+            
+                <label for="name">First name:</label><br>
+                <input type="text" asp-for="FirstName" class="form-control" id="name" name="name"><br>
+            
+                <label for="lname">Last name:</label><br>
+                <input type="text" asp-for="Surname" class="form-control" id="lname" name="lname"><br>
+
+                <label for="dob">Date Of Birth:</label><br>
+                <input type="date" asp-for="DateOfBirth" class="form-control" id="dob" name="dob"><br />
+
+                <label for="age">Age:</label><br>
+                <input type="number" asp-for="Age" class="form-control" id="age" name="age"><br/>
+
+                <label for="country">Country:</label><br>
+                <input type="text" asp-for="Country" class="form-control" id="country" name="country"><br />
+
+                <label for="city">City:</label><br>
+                <input type="text" asp-for="City" class="form-control" id="city" name="city"><br />
+        </fieldset>
+        <p><input class="btn-dark" type="submit" name="submit" value="Submit" /></p>
+    </form>
+    @*
+    <button type="button"
+            id="updateButton"
+            class="btn btn-primary"
+            onclick="productUpdate();">
+        Add
+    </button>*@
+    
+
+
+    
+
+    
+</div>
+
+
+<div>
+    @*<a class="btn btn-primary" asp-controller="Profile">
+       Submit
+    </a>*@
+    <br />
+
+
+</div>
+

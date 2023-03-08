@@ -25,14 +25,28 @@
     {
         <tr>
             <td>@profile.FirstName</td>
-            <td>@profile.Surname</td>ll
+            <td>@profile.Surname</td>
             <td>@profile.DateOfBirth.Year - @profile.DateOfBirth.Month - @profile.DateOfBirth.Day</td>
             <td>@profile.Age</td>
             <td>@profile.Country</td>
             <td>@profile.City</td>
+            <td>
+                <a class="btn btn-primary" asp-controller="Profile" asp-action="Edit" asp-route-id=@profile.Id>Edit</a>
+                <a class="btn btn-danger" asp-controller="Profile" asp-action="Delete" asp-route-id=@profile.Id>Delete</a>
+            </td>
         </tr>
+
     }
+
 </table>
+
+<div>
+    Click here to add someone
+    <a class="btn btn-primary" asp-controller="Submission">
+        Add someone
+    </a>
+
+</div>
     
 
 

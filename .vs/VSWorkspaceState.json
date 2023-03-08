@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Views\\Home",
-    "\\Views\\Malwande",
-    "\\Views\\Profile",
-    "\\Views\\Shared"
+    "\\Models"
   ],
-  "SelectedNode": "\\Controllers\\ProfileController.cs",
+  "SelectedNode": "\\Newroject.sln",
   "PreviewInSolutionExplorer": false
 }
