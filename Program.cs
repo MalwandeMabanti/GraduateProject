@@ -47,6 +47,20 @@ app.MapControllerRoute(
     pattern: "{controller=Malwande}/{action=Index}");
 
 
+app.MapControllerRoute(
+    name: "Submission",
+    pattern: "{controller=Submission}/{action=Index}");
+
+
+app.MapControllerRoute(
+    name: "Edit",
+    pattern: "{controller=Edit}/{action=Index}");
+
+app.MapControllerRoute(
+    name: "Delete",
+    pattern: "{controller=Delete}/{action=Index}");
+
+
 
 app.Run();
 

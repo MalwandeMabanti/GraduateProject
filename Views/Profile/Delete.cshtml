@@ -1,0 +1,89 @@
+﻿@model NewProject.Models.ProfileViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>This is where we delete</h1>
+
+<form method="post" asp-action="Delete" asp-controller="Profile">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <input value="@Model.Id" type="hidden" name="id" />
+
+        <label for="name">First name:</label>
+        <br>
+        <input value="@Model.FirstName" type="text" asp-for="FirstName" class="form-control" id="name" name="name" disabled>
+        <br>
+
+        <label for="lname">Last name:</label>
+        <br>
+        <input value="@Model.Surname" type=" text" asp-for="Surname" class="form-control" id="lname" name="lname" disabled>
+        <br>
+
+        <label for="dob">Date Of Birth:</label>
+        <br>
+        <input value="@Model.DateOfBirth.ToString("yyyy/MM/dd")" type=" date" asp-for="DateOfBirth" class="form-control" id="dob" name="dob" disabled>
+        <br />
+
+        <label for="age">Age:</label>
+        <br>
+        <input value=@Model.Age type=" number" asp-for="Age" class="form-control" id="age" name="age" disabled>
+        <br />
+
+        <label for="country">Country:</label>
+        <br>
+        <input value="@Model.Country" type=" text" asp-for="Country" class="form-control" id="country" name="country" disabled>
+        <br />
+
+        <label for="city">City:</label>
+        <br>
+        <input value="@Model.City" type=" text" asp-for="City" class="form-control" id="city" name="city" disabled>
+        <br />
+    </fieldset>
+    <p><input class="btn-dark" type="submit" name="submit" value="Submit" /></p>
+</form>
+
+@*
+<form method="post" asp-action="Delete" asp-controller="Profile">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+
+
+        <label for="name">First name:</label>
+        <br>
+        <input type="text" asp-for="FirstName" class="form-control" id="name" name="name" disabled>
+        <br>
+
+        <label for="lname">Last name:</label>
+        <br>
+        <input type="text" asp-for="Surname" class="form-control" id="lname" name="lname" disabled>
+        <br>
+
+        <label for="dob">Date Of Birth:</label>
+        <br>
+        <input type="date" asp-for="DateOfBirth" class="form-control" id="dob" name="dob" disabled>
+        <br />
+
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" asp-for="Age" class="form-control" id="age" name="age" disabled>
+        <br />
+
+        <label for="country">Country:</label>
+        <br>
+        <input type="text" asp-for="Country" class="form-control" id="country" name="country" disabled>
+        <br />
+
+        <label for="city">City:</label>
+        <br>
+        <input type="text" asp-for="City" class="form-control" id="city" name="city" disabled>
+        <br />
+    </fieldset>
+    <p><input class="btn-dark" type="submit" name="submit" value="Submit" /></p>
+</form>
+*@
